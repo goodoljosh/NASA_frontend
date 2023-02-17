@@ -13,10 +13,16 @@ function App() {
   // }, []);
 
   // App.get("/", function(req, res)  {
-   axios.get('https://nasa-backend.onrender.com' ).then(function(response){
-     console.log(response);
-   })
+  //  axios.get('https://nasa-backend.onrender.com' ).then(function(response){
+  //    console.log(response);
+  //  })
 //  });
+    var config = {
+      headers: {credentials: "include" }
+    };
+    axios.get("https://3001-csuwebdev-nasabackend-m2liyfnaxnj.ws-us87.gitpod.io", config).then((response) => {
+    })
+
 
   return (
     <div className="App">
