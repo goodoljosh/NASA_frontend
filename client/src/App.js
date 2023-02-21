@@ -24,7 +24,6 @@ function App() {
       headers: {credentials: "include" }
     };
     axios.get("https://3001-csuwebdev-nasabackend-m2liyfnaxnj.ws-us87.gitpod.io", config).then((response) => {
-       mockNasaResp.url;
     })
   return (
     <div className="App">
@@ -32,6 +31,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           {!data ? "Loading..." : data}
+        </p>
+        <p>
+        {mockNasaResp.url}
         </p>
       </header>
     </div>
