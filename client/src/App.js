@@ -2,10 +2,11 @@ import React from "react";
 import axios from "axios";
 import logo from './logo.svg';
 import './App.css';
+const mockNasaResp = "https://3001-csuwebdev-nasabackend-4adrwz2qhf4.ws-us87.gitpod.io/";
 
 function App() {
   const[data, setData] = React.useState(null);
-  
+
   // React.useEffect(()=> {
   //   fetch('/api')
   //   .then((res) => res.json())
@@ -17,13 +18,14 @@ function App() {
   //    console.log(response);
   //  })
 //  });
+
+
     var config = {
       headers: {credentials: "include" }
     };
     axios.get("https://3001-csuwebdev-nasabackend-m2liyfnaxnj.ws-us87.gitpod.io", config).then((response) => {
+       mockNasaResp.url;
     })
-
-
   return (
     <div className="App">
       <header className="App-header">
@@ -35,5 +37,5 @@ function App() {
     </div>
   );
 }
-
 export default App;
+
