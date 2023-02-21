@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import logo from './logo.svg';
+import Header from "./components/Header";
 import './App.css';
 
 
@@ -31,9 +32,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Header/>
         <p>
           {nasaResponse.title}
-          {!data ? "Loading..." : data}
+          {nasaResponse.explanation}
         </p>
         
       </header>
