@@ -31,14 +31,24 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Header/>
-        <p>
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <h1>
           {nasaResponse.title}
+        </h1>
+       <img src={nasaResponse.url} class ={"responsive"} width ={"600"} height = {"600"} /> 
+        <h1>
+          {nasaResponse.date}
+        </h1>
+       <p>
           {nasaResponse.explanation}
         </p>
-        
+        {/* <p>
+          {!data ? "Loading..." : data}
+        </p> */}
       </header>
+      <footer>
+        {nasaResponse.copyright}
+      </footer>
     </div>
   );
 }
