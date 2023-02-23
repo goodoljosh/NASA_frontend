@@ -28,9 +28,7 @@ function App() {
     // })
   return (
     <div className="App">
-      <header className="App-header">
         <Header/>
-      </header>
       <footer>
         <p>©</p>
         {nasaResponse.copyright}
