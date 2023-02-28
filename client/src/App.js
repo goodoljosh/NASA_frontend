@@ -16,7 +16,7 @@ function App() {
   // }, []);
 
 
-   axios.get('https://3001-csuwebdev-nasabackend-h6y5cxktbjb.ws-us88.gitpod.io/' ).then(function(response){
+   axios.get('https://nasa-backend.onrender.com' ).then(function(response){
      console.log(response);
    })
 
