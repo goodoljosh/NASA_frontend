@@ -1,5 +1,5 @@
 import React from "react";
-//import axios from "axios";
+import axios from "axios";
 import Header from "./components/Header";
 import Nav  from "./components/Nav";
 // import './Nav.css';
@@ -15,11 +15,10 @@ function App() {
   //   .then((data) => setData(data.message));
   // }, []);
 
-  // App.get("/", function(req, res)  {
-  //  axios.get('https://nasa-backend.onrender.com' ).then(function(response){
-  //    console.log(response);
-  //  })
-//  });
+
+   axios.get('https://3001-csuwebdev-nasabackend-h6y5cxktbjb.ws-us88.gitpod.io/' ).then(function(response){
+     console.log(response);
+   })
 
 
     var config = {
