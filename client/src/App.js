@@ -4,19 +4,21 @@ import Header from "./components/Header";
 import Nav  from "./components/Nav";
 // import './Nav.css';
 import './App.css';
-
+const marsDate = new Date(year, month, date);
 
 function App() {
   const [nasaParse, setNasaParse] = useState({})
   
   useEffect(()=>{
+    const marsDate = new Date(year, month, date);
+    
     axios.get('https://nasa-backend.onrender.com' ).then(function(response){
       setNasaParse(JSON.parse(response.data))
     })
   },[])
    
 
-  
+
    
 
     var config = {
