@@ -4,8 +4,8 @@ const Nav = () => {
 
             <ul>
              <li><a >Home</a></li>
-             <li><a >Picture of the Day</a></li>
-             <li><a href="https://nasa-backend.onrender.com/mars" >Mars Rover Photos: </a></li>
+             <li><a href = "https://nasa-backend.onrender.com/npod">Picture of the Day</a></li>
+             <li><a href="https://nasa-backend.onrender.com/mars" >Mars Rover Photos </a></li>
              <li><a >About</a></li>
             </ul>
     </nav>
