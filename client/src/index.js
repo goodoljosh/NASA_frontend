@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PictureoftheDay from './routes/PictureoftheDay';
+import MarsPhotos from './routes/MarsPhotos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,8 +14,8 @@ root.render(
       <Route path="/" element={<App />}>
         {/* <Route path ="home" element = {<Home/>} /> */}
         <Route path ="pod" element = {<PictureoftheDay/>} />
-        {/* <Route path="mars" element={<MarsPhotos />} />
-        <Route path="about" element={<About />} /> */}
+         <Route path="mars" element={<MarsPhotos />} />
+        {/* <Route path="about" element={<About />} /> */ }
       </Route>
     </Routes>
   </BrowserRouter>
