@@ -26,6 +26,7 @@ function App() {
     <div className="App">
         <Nav />
         <Outlet/>
+        <Outlet/>
     </div>
   );
 }
