@@ -1,5 +1,8 @@
 .App {
+  background-color: #282c34;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
 }
 
 .App-logo {
@@ -22,6 +25,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative; 
+  top:50px;
 }
 
 ul {
@@ -29,7 +34,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #dedddd3f;
+  background-color: #949494e5;
   position: fixed;
   top: 0;
   width: 100%;

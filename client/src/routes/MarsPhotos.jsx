@@ -11,15 +11,18 @@ export default function MarsPhotos() {
     useEffect(()=>{
     axios.get('https://nasa-backend.onrender.com/mars' ).then(function(response){
       setNasaParse(JSON.parse(response.data))
-
     })
   },[])
 
     return(
-    <>
-        <Mars nasaResponse={nasaParse}/>
-    
-    </>
+       <> 
+        <Mars key ={JSON.stringify(nasaParse)} nasaResponse={nasaParse}/>
+        <footer>
+        <p>©</p>
+        2020
+      </footer>
+        </>
+        
     );
 
 }
