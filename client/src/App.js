@@ -24,7 +24,9 @@ function App() {
 
   return (
     <div className="App">
-        <h1>NASA API Project</h1>
+      <header>
+      <h1> NASA API Project</h1>
+      </header>
         <Nav />
         <Outlet/>
     </div>
