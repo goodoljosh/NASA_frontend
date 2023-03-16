@@ -4,7 +4,9 @@ const Mars = (props)=> {
 
    
     const nasaResponse = props.nasaResponse
-        {photos:[]}
+        //unused photos array object causes error. 
+        //Application displays correctly whether commented or not
+        // {photos:[]}
         let cards = []
         if(nasaResponse && nasaResponse.photos){
         nasaResponse.photos.forEach((mars,index)=>{
