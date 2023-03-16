@@ -8,7 +8,7 @@ const Header = (props)=> {
     const nasaResponse = props.nasaResponse
         return(
             <header className="App-header">
-                        <h1>
+         <h1>
           {nasaResponse.title}
         </h1>
         <p>{nasaResponse.date}</p>
