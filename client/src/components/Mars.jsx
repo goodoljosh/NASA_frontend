@@ -13,14 +13,14 @@ const Mars = (props)=> {
             cards.push(<div key = {index}>
                 <header className="App-header">
                    
-                   <div>{mars.camera.full_name}</div>
+                   <div>Camera Name: {mars.camera.full_name}</div>
                    
-                   <div>{mars.earth_date}</div>
+                   <div>Earth Date: {mars.earth_date}</div>
                    <img src={mars.img_src} className ={"responsive"} width ={"700"} height = {"500"}/>
-                   <div>{mars.rover.name}</div>
-                   <div>{mars.rover.landing_date}</div>
-                   <div>{mars.rover.launch_date}</div>
-                   <div>{mars.rover.status}</div>
+                   <div>Name of Rover: {mars.rover.name}</div>
+                   <div>Landing Date: {mars.rover.landing_date}</div>
+                   <div>Launch Date: {mars.rover.launch_date}</div>
+                   <div>Mars Rover Status: {mars.rover.status}</div>
                    </header>
                  </div>
         
@@ -28,17 +28,17 @@ const Mars = (props)=> {
          })
         }
         return cards
-        return(
-            <header className="App-header">
-       <h1>
-          {nasaResponse.full_name}
-        </h1>
-        <p>{nasaResponse.earth_date}</p>
-        <img src={nasaResponse.img_src} className ={"responsive"} width ={"600"} height = {"600"}/> 
+    //     return(
+    //         <header className="App-header">
+    //    <h1>
+    //       {nasaResponse.full_name}
+    //     </h1>
+    //     <p>{nasaResponse.earth_date}</p>
+    //     <img src={nasaResponse.img_src} className ={"responsive"} width ={"600"} height = {"600"}/> 
 
-         <p>{nasaResponse.rover}</p>
-            </header>
-        )
+    //      <p>{nasaResponse.rover}</p>
+    //         </header>
+    //     )
 }
 
 export default Mars
