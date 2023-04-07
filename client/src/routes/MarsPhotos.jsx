@@ -7,7 +7,7 @@ export default function MarsPhotos() {
     const [nasaParse, setNasaParse] = useState({})
     useEffect(()=>{
     axios.get('https://nasa-backend.onrender.com/mars' ).then(function(response){
-      setNasaParse(JSON.parse(response.data))
+      setNasaParse((response.data))
     })
   },[])
 

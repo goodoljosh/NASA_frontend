@@ -6,7 +6,7 @@ export default function PictureoftheDay() {
     const [nasaParse, setNasaParse] = useState({})
     useEffect(()=>{
     axios.get('https://nasa-backend.onrender.com/npod' ).then(function(response){
-      setNasaParse(JSON.parse(response.data))
+      setNasaParse((response.data))
 
     })
   },[])
