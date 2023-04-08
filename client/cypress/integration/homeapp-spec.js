@@ -5,6 +5,7 @@ describe('example to-do app', () => {
       // Since we want to visit the same URL at the start of all our tests,
       // we include it in our beforeEach function so that it runs before each test
       //Add intercept line here!!!
+      //cy.intercept('3000/')
       cy.visit('http://localhost:3000')
     })
 
