@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-// import Header from "./components/Header";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import Mars from "../components/Mars";
 export default function MarsPhotos() {
 
@@ -13,6 +14,7 @@ export default function MarsPhotos() {
 
     return(
        <> 
+       <DatePicker/>
         <Mars key ={JSON.stringify(nasaParse)} nasaResponse={nasaParse}/>
         <footer>
         <p>©</p>
