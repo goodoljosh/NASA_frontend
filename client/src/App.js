@@ -29,6 +29,9 @@ function App() {
       </header>
         <Nav />
         <Outlet/>
+        <footer>
+          
+      </footer>
     </div>
   );
 }
