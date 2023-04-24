@@ -11,7 +11,7 @@ const Mars = (props) => {
                     <div>Camera Name: {mars.camera.full_name}</div>
 
                     <div>Earth Date: {mars.earth_date}</div>
-                    <img src={mars.img_src} className={"responsive"} width={"700"} height={"500"} />
+                    <img src={mars.img_src} className={"responsive"} alt={mars.img_src} width={"700"} height={"500"} />
                     <div>Name of Rover: {mars.rover.name}</div>
                     <div>Landing Date: {mars.rover.landing_date}</div>
                     <div>Launch Date: {mars.rover.launch_date}</div>

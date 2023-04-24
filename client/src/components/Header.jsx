@@ -9,7 +9,7 @@ const Header = (props) => {
                 {nasaResponse.title}
             </h1>
             <p>{nasaResponse.date}</p>
-            <img src={nasaResponse.url} className={"responsive"} width={"600"} height={"600"} />
+            <img src={nasaResponse.url} className={"responsive"} Alt={nasaResponse.url} width={"600"} height={"600"} />
 
             <p>{nasaResponse.explanation}</p>
         </header>
