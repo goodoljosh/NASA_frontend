@@ -5,5 +5,5 @@ import Mars from '../components/Mars.jsx';
 
 it('Renders mars part of application and checks elements', () => {
   render(<Mars nasaResponse={nasaResponse}/>);
-  expect(screen.getByText("Earth Date:" + nasaResponse.photos[0].earth_date)).toBeInTheDocument();
+  expect(screen.getByText("Earth Date: " + nasaResponse.photos[0].earth_date)).toBeInTheDocument();
 });
