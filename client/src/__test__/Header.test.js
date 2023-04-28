@@ -16,7 +16,12 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Header from '../components/Header.jsx';
 
-it('Renders mars part of application and checks elements', () => {
+it('Checks picture of the day for date', () => {
   render(<Header nasaResponse={nasaResponse}/>);
   expect(screen.getByText(nasaResponse.date)).toBeInTheDocument();
+});
+
+it('Checks picture of the day for explanation', () => {
+  render(<Header nasaResponse={nasaResponse}/>);
+  expect(screen.getByText(nasaResponse.explanation)).toBeInTheDocument();
 });
