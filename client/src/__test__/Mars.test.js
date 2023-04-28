@@ -3,7 +3,12 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Mars from '../components/Mars.jsx';
 
-it('Renders mars part of application and checks elements', () => {
+it('Checks Elements in mars application', () => {
   render(<Mars nasaResponse={nasaResponse}/>);
   expect(screen.getByText("Earth Date: " + nasaResponse.photos[0].earth_date)).toBeInTheDocument();
 });
+// it('Checks photos in mars application', () => {
+//   render(<Mars nasaResponse={nasaResponse}/>);
+//   expect(screen.getAllByText( nasaResponse.photos[0].img_src)).toBeInTheDocument();
+// });
+
