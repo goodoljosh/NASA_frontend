@@ -25,3 +25,14 @@ it('Checks picture of the day for explanation', () => {
   render(<Header nasaResponse={nasaResponse}/>);
   expect(screen.getByText(nasaResponse.explanation)).toBeInTheDocument();
 });
+
+it('Checks picture of the day for the title', () => {
+  render(<Header nasaResponse={nasaResponse}/>);
+  expect(screen.getByText(nasaResponse.title)).toBeInTheDocument();
+});
+
+it('Checks picture of the day for picture url', () => {
+  render(<Header nasaResponse={nasaResponse}/>);
+  expect(screen.getByAltText(nasaResponse.url)).toBeInTheDocument();
+});
+

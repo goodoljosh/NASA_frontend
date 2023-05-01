@@ -7,8 +7,5 @@ it('Checks Elements in mars application', () => {
   render(<Mars nasaResponse={nasaResponse}/>);
   expect(screen.getByText("Earth Date: " + nasaResponse.photos[0].earth_date)).toBeInTheDocument();
 });
-// it('Checks photos in mars application', () => {
-//   render(<Mars nasaResponse={nasaResponse}/>);
-//   expect(screen.getAllByText( nasaResponse.photos[0].img_src)).toBeInTheDocument();
-// });
+
 
