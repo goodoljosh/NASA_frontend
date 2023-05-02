@@ -14,8 +14,8 @@ const Header = (props) => {
           title={nasaResponse.title}
           src={nasaResponse.url}
           className="responsive"
-          width="600"
-          height="600"
+          width="640"
+          height="360"
         />
       ) : (
         <img
