@@ -5,10 +5,10 @@ import Mars from '../components/Mars.jsx';
 
 it('Checksearth date in mars application', () => {
   render(<Mars nasaResponse={nasaResponse}/>);
-  expect(screen.getByText("Earth Date: " + nasaResponse.photos[0].earth_date)).toBeInTheDocument();
+  expect(screen.getAllByText("Earth Date: " + nasaResponse.photos[0].earth_date)[0]).toBeInTheDocument();
 });
 
 it('Checks Name in mars application', () => {
   render(<Mars nasaResponse={nasaResponse}/>);
-  expect(screen.getByText("Earth Date: " + nasaResponse.photos[0].earth_date)).toBeInTheDocument();
+  expect(screen.getAllByText("Earth Date: " + nasaResponse.photos[0].earth_date)[0]).toBeInTheDocument();
 });

@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <header>
+        <h1>Nasa API Project</h1>
         <HomePage />
       </header>
         <Nav />
