@@ -12,6 +12,10 @@ export default function PictureoftheDay() {
   return (
     <>
       <Header nasaResponse={nasaParse} />
+      <footer>
+        <p>©</p>
+        Nasa Picture Project
+      </footer>
     </>
   );
 
