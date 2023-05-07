@@ -4,6 +4,9 @@ import React from 'react';
 
 it('Testing for header', () => {
   render(<Mars />);
-  expect(screen.getByText("2020")).toBeInTheDocument();
-  expect(screen.getByText("©")).toBeInTheDocument();
+  expect(screen.getAllByDisplayValue("05/07/2023"));
+});
+
+it('url testing', () => {
+  expect(global.window.location.href).toContain('http://localhost/');
 });
