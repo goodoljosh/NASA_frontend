@@ -13,7 +13,7 @@ describe('example to-do app', () => {
         // Then, we use `should` to assert that there are two matched items,
         // which are the two default items.
         cy.url().should('include', '/')
-        cy.get('.App h1').should('have.text', 'NASA API Project')
+        cy.get('.App h1').should('have.text', 'Nasa API Project')
     })
 
     

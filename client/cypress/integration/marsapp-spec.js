@@ -5,5 +5,5 @@ beforeEach(() => {
     it('look for mars', () => {    
      cy.url().should('include', '/mars')
      //cy.get('class="image"').find("img").should('be.visible');
-     cy.get('footer').should('have.text', "©2020")
+     cy.get('footer').should('have.text', "Mars Photos")
     })
