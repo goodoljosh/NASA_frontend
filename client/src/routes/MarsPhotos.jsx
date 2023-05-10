@@ -18,7 +18,7 @@ export default function MarsPhotos() {
       <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
       <Mars key={JSON.stringify(nasaParse)} nasaResponse={nasaParse} />
       <footer>
-        Mars Photos
+        Mars Photos Page
       </footer>
     </>
 
