@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Nasa API Project</h1>
-        <HomePage />
+        <h2>Welcome! The purpose of this project is to use an API for NASA( National Aeronautics and Space Administration) to format and display information.</h2>
+
+        {/* Creates an error where elements on the homepage are repeated twice */}
+        {/* <HomePage /> */}
       </header>
         <Nav />
         <Outlet/>

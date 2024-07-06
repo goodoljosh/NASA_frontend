@@ -15,11 +15,15 @@ export default function MarsPhotos() {
 
   return (
     <>
+      <header>
+        Please make a selection:
+      </header>
       <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
       <Mars key={JSON.stringify(nasaParse)} nasaResponse={nasaParse} />
       <footer>
         Mars Photos Page
       </footer>
+      
     </>
 
   );

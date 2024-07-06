@@ -14,7 +14,7 @@ export default function PictureoftheDay() {
       <Header nasaResponse={nasaParse} />
       <footer>
         <p>©</p>
-        Nasa Picture Project
+        Picture of the Day Page
       </footer>
     </>
   );
